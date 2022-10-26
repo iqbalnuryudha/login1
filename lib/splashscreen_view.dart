@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:login/home/home_view.dart';
+import 'package:login/login_view.dart';
 
 class SplashScreenPage extends StatefulWidget {
   const SplashScreenPage({ Key? key }) : super(key: key);
@@ -19,14 +20,13 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
   }
 
   openSplashScreen() async {
-    //bisa diganti beberapa detik sesuai keinginan
-    var durasiSplash = const Duration(seconds: 9);
-
+    var durasiSplash = const Duration(seconds: 2);
     return Timer(durasiSplash, () {
-      //pindah ke halaman home
+      //pindah ke halaman login
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (_) {
-            return HomePage();
+            //return HomePage();
+            return LoginPage();
           })
       );
     });
