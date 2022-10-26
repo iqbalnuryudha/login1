@@ -57,6 +57,7 @@ flutter:
     - assets/images/ars.png
     - assets/images/arsenal.jpg
     - assets/images/loading.gif
+    - assets/images/bolehshop1.png
   fonts:
     - family: Lato
       fonts:

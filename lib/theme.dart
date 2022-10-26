@@ -5,6 +5,7 @@ Color colorLight = Color(0xfffbfbfb);
 Color textBlack = Color(0xff222222);
 Color textGrey = Color(0xff94959b);
 Color textWhiteGrey = Color(0xfff1f1f5);
+Color pingmuda = Color(0xffe28687);
 
 TextStyle heading2 = TextStyle(
   fontSize: 24,

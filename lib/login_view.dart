@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   SizedBox(height: 20,),
                   Image.asset(
-                    'assets/images/ars.png',
+                    'assets/images/bolehshop1.png',
                     width: 250,
                     height: 100,
                   )
@@ -96,7 +96,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(height: 32,),
               CustomPrimaryButton(
-                buttonColor: primaryBlue,
+                buttonColor: pingmuda,
                 textValue: 'Login',
                 textColor: Colors.white,
               ),
@@ -107,13 +107,13 @@ class _LoginPageState extends State<LoginPage> {
                   style: heading6.copyWith(color: textGrey),
                 ),
               ),
-              SizedBox(height: 15,),
+              SizedBox(height: 5,),
               CustomPrimaryButton(
                 buttonColor: colorLight,
                 textValue: 'Login with Google',
                 textColor: textBlack,
               ),
-              SizedBox(height: 15,),
+              SizedBox(height: 10,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
