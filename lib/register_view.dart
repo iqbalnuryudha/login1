@@ -27,11 +27,11 @@ class _RegisterPageState extends State<RegisterPage> {
           child: Padding(
             padding: EdgeInsets.fromLTRB(24, 40, 24, 0),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Please Register',
@@ -101,7 +101,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 suffixIcon: IconButton(
                                   color: textGrey,
                                   splashRadius: 1,
-                                  icon: Icon(passwordConfirmVisible ? Icons.visibility_outlined : Icons.voice_over_off_outlined),
+                                  icon: Icon(passwordConfirmVisible ? Icons.visibility_outlined : Icons.visibility_off_outlined),
                                   onPressed: () {
                                     setState(() {
                                       passwordConfirmVisible = !passwordConfirmVisible;

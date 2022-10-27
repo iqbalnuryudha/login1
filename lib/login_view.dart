@@ -28,11 +28,10 @@ class _LoginPageState extends State<LoginPage> {
         child: Padding(
           padding: EdgeInsets.fromLTRB(24, 40, 24, 0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(height: 20,),
                   Image.asset(
@@ -107,11 +106,18 @@ class _LoginPageState extends State<LoginPage> {
                   style: heading6.copyWith(color: textGrey),
                 ),
               ),
-              SizedBox(height: 5,),
-              CustomPrimaryButton(
-                buttonColor: colorLight,
-                textValue: 'Login with Google',
-                textColor: textBlack,
+              SizedBox(height: 10,),
+              Container(
+                margin: EdgeInsets.only(left: 500),
+                child:
+                FloatingActionButton(
+                  heroTag: null,
+                  onPressed: () {},
+                  child: Image.asset(
+                    'images/google.png', width: 30, height: 30,
+                  ),
+                  backgroundColor: Colors.white,
+                ),
               ),
               SizedBox(height: 10,),
               Row(
@@ -130,9 +136,8 @@ class _LoginPageState extends State<LoginPage> {
                           )
                       );
                     },
-                    child: Text(
-                      'Register',
-                      style: regular16pt.copyWith(color: primaryBlue),
+                    child: Image.asset(
+                      'images/google.png', width: 30, height: 30,
                     ),
                   )
                 ],
